@@ -1,0 +1,179 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+      <section class="container">
+
+        <div class="row shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="col">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'images/one.jpg' %}" class="d-block w-100" id="donvol" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/two.jpg' %}" class="d-block w-100" id="donvol" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/three.png' %}" class="d-block w-100" id="donvol" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/cloths11.jpg' %}" class="d-block w-100" id="donvol" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/donation1.jpg' %}" class="d-block w-100" id="donvol" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mt-4 d-flex align-items-center">
+          <div class="card border-primary mb-3">
+            <div class="card-header text-center">Miracle Makers INC.</div>
+            <div class="card-body text-primary">
+              <h5 class="card-title text-center" > Reduce Wasteage of Needy Items </h5>
+              <p class="card-text"> Help others without any reason and give without the expectation of receiving anything in return. </p>
+              <p class="text-danger"> Always give without remembering and always receive without forgetting </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase"> About </h2>
+          <h3 class="section-subheading text-muted"> Miracle Makers inc. is the NGO Orgaisation who fullfill the dreams of needy person. A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may take various forms, including money, alms, services, or goods such as clothing, toys, food, or vehicles. </h3>
+
+          
+            <div id="carouselExampleSlidesOnly" class="carousel slide mb-5" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="{% static 'images/workmmi11.jpg' %}" class="img-fluid" id="don" alt="..." height = 300 width = 900>
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/workmmi22.jpg' %}" class="img-fluid" id="don" alt="..." height = 300 width = 900>
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/workmmi33.jpg' %}" class="img-fluid" id="don" alt="..." height = 300 width = 900>
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/workmmi44.jpg' %}" class="img-fluid" id="don" alt="..." height = 300 width = 900>
+                </div>
+                <div class="carousel-item">
+                  <img src="{% static 'images/workmmi55.jpg' %}" class="img-fluid" id="don" alt="..." height = 300 width = 900>
+                </div>
+              </div>
+          </div>
+
+          {% comment %} <img src= "{% static 'images/workmmi1.jpg' %} " height = 300 width = 900 class="mb-5" alt="image-responsive"> {% endcomment %}
+          <h3 class="section-subheading text-muted"> Our Organisation receives the Donations from people such as Cloths, Books, money, needy items etc. for poor people. </h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'images/donation.jpg' %}" alt="donation" id="dona">
+              <h4>Donation</h4>
+              <p class="text-muted">
+                A donation is a gift for charity, humanitarian aid, or to benefit a cause. A donation may take various forms, including money, alms, services, or goods such as clothing, toys, food, or vehicles.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="team-member">
+              <img class="mx-auto rounded-circle" src="{% static 'images/volunteer.png' %}" alt="donation" id="dona">
+              <h4>Volunteer</h4>
+              <p class="text-muted">
+                These volunteers donate their time, skills, talents and expertise in a variety of service work areas, such as orphanage volunteer work, hospital volunteer work, and many other types of outstanding jobs.Being a volunteer has lots of benefits. It can bring meaning and purpose to your life, while increasing your self-esteem and wellbeing. Volunteering can also relieve stress, and alleviate symptoms of depression. As well as having a positive impact on your community, volunteering can improve your relationships.
+              </p>
+            </div>
+        </div>
+      </div>
+      </section>
+
+      <section id="dovo">
+          <div class="container mt-2">
+              <div class="text-center mt-5 mb-5">
+                <h2 class="section-heading text-uppercase">Donation & Volunteer</h2>
+                <h3 class="section-subheading text-muted">How to Donate and Volunteer?</h3>
+              </div>
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="card card-block">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static 'images/don1.jpg' %}" class="d-block w-100 img-fluid" id="don" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/don22.jpg' %}" class="d-block w-100 img-fluid" id="don" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/don33.jpg' %}" class="d-block w-100 img-fluid" id="don" alt="...">
+                        </div>
+                      </div>
+                  </div>
+                  <h5 class="card-title mt-3 mb-3 text-center">Best Way to Help Others</h5>
+                <p class="card-text text-center">Join Us and Become a Part of this Good Work</p>
+                <a href="#" class="btn btn-danger btn-lg btn-block btn-center">Donate Now</a>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="card card-block">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="{% static 'images/vol22.jpg' %}" class="d-block w-100" id="vol" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="{% static 'images/vol3.jpg' %}" class="d-block w-100" id="vol" alt="...">
+                        </div>                        
+                        <div class="carousel-item">
+                          <img src="{% static 'images/vol44.jpg' %}" class="d-block w-100" id="vol" alt="...">
+                        </div>                       
+                      </div>
+                  </div>
+                  <h5 class="card-title mt-3 mb-3 text-center">Become a Volunteer Today</h5>
+                <p class="card-text text-center">One of the greatest gifts you can give is your time</p>
+                <a href="#" class="btn btn-danger btn-lg btn-block btn-center">Become Volunteer</a>
+                </div>               
+              </div>
+          </div>
+      </section>
+
+      <section id="contact">
+        <div class="container mt-2">
+          <div class="text-center mt-5 mb-5">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted mb-0">Feel free to contact us if there's anything that needs help.</h3>
+          </div>
+          <div class="row mb-5 bg-light contact-card align-items-center text-center">
+            <div class="col-xl-3 col-lg-6">
+              <div class="contact-head"><i class="fa fa-phone-square"></i>
+                Contact
+              </div>
+              <div  class="contact-text">+918447610247<br/>+94778545457</div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="contact-head"><i class="fa fa-envelope"></i>
+                Send Mail
+              </div>
+              <div  class="contact-text">gulab.khan399@gmail.com<br/>miraclemakers.inc@gmail.com</div>
+          </div>
+          <div class="col-xl-3 col-lg-6">
+            <div class="contact-head"><i class="fa fa-address-book"></i>
+              Office Address
+            </div>
+            <div  class="contact-text">D-134 Block-B DLF City <br>Gurugram-122003</div>
+            </div>
+            <div class="col-xl-3 col-lg-6">
+              <div class="contact-head"><i class="fa fa-clock"></i>
+                Office Hours
+              </div>
+              <div  class="contact-text">09:00 AM <br> TO 05:00 PM</div>
+              </div>
+        </div>
+      </section>
+
+{% endblock main %}

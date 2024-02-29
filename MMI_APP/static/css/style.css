@@ -1,0 +1,196 @@
+
+body {
+    padding-top: 70px;
+}
+
+.section-heading{
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.section-subheading{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.team-member{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/*  Team Member Image */
+.team-member img{
+    width: 18rem;
+    height: 18rem;
+    border: 0.5rem solid rgba(234, 11, 11, 0.5);
+}
+
+#don{
+    width: 18rem;
+    height: 18rem;
+    border: 0.5rem solid rgba(234, 11, 11, 0.5);
+}
+
+#vol{
+    width: 18rem;
+    height: 18rem;
+    border: 0.5rem solid rgba(234, 11, 11, 0.5);
+}
+
+#donvol{
+    width: 18rem;
+    height: 18rem;
+    border: 0.5rem solid rgba(234, 11, 11, 0.5);
+}
+.team-member h4{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5;
+}
+
+/* Don / Vol */
+
+.card{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-title{
+    font-size: 25px;
+    transition: 1s;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card::before, .card::after{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    transform: scale3d(0,0,1);
+    transition: transform .3s  ease-in-out 0s;
+    background: rgba(255, 255, 255, 0.3);
+    content: '';
+    pointer-events: none;
+}
+
+.card::before{
+    transform-origin: left top;
+}
+
+.card::after{
+    transform-origin: right bottom;
+}
+
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+    transform: scale3d(1,1,1);
+}
+
+/* CONTACT STYLE */
+
+.contact-card{
+    height: 300px;
+}
+
+.contact-head{
+    font-size: 25px;
+}
+
+.contact-text{
+    font-weight: 700;
+    color: red;
+}
+
+/* footerb style */
+
+
+#carouselExampleSlidesOnly{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#carouselExampleSlidesOnly:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#carouselExampleSlidesOnly::before, #carouselExampleSlidesOnly::after{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    transform: scale3d(0,0,1);
+    transition: transform .3s  ease-in-out 0s;
+    background: rgba(255, 255, 255, 0.3);
+    content: '';
+    pointer-events: none;
+}
+
+#carouselExampleSlidesOnly::before{
+    transform-origin: left top;
+}
+
+#carouselExampleSlidesOnly::after{
+    transform-origin: right bottom;
+}
+
+#carouselExampleSlidesOnly:hover::before, #carouselExampleSlidesOnly:hover::after, #carouselExampleSlidesOnly:focus::before, #carouselExampleSlidesOnly:focus::after {
+    transform: scale3d(1,1,1);
+}
+
+#dona{
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#dona:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#dona::before, #dona::after{
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    transform: scale3d(0,0,1);
+    transition: transform .3s  ease-in-out 0s;
+    background: rgba(255, 255, 255, 0.3);
+    content: '';
+    pointer-events: none;
+}
+
+#dona::before{
+    transform-origin: left top;
+}
+
+#dona::after{
+    transform-origin: right bottom;
+}
+
+#dona:hover::before, #dona:hover::after, #dona:focus::before, #dona:focus::after {
+    transform: scale3d(1,1,1);
+}
+
+
+/* LOGIN */
+
+.gradiant-custom{
+    background: #000;
+
+    background: -webkit-linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(237, 231, 255));
+
+    background: linear-gradient(to right rgba(0, 0, 0, 0.3), rgba(237, 231, 255));
+}
+

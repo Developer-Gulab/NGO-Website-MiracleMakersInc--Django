@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/style.css' %}" >
+    <title>Miracle Makers INC.</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'images/images (1).png' %}">
+</head>
+<body id="page-top">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" id="mainNav">
+        <div class="container">
+          <a class="navbar-brand" href="{% url 'index' %}"> 
+            <img src="{% static 'images/images (1).png' %}" alt="MM INC." width="50px" height="50px">
+            Miracle Makers INC.
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            MM INC. <i class="fas fa-bars ms-1"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto py-4 py-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dovo">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'gallery' %}">Gallery</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Login
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="{% url 'login_donor' %}">DONOR</a></li>
+                    <li><a class="dropdown-item" href="{% url 'login_volunteer' %}">VOLUNTEER</a></li>
+                    <li><hr  class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="{% url 'login_admin' %}">ADMIN</a></li>
+                  </ul>
+              </li>
+          </div>
+        </div>
+      </nav>
+
+{% block main %}
+
+{% endblock main %}
+{% include 'base-footer.html' %}
